@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - นายเทียนชัย บุญสอน</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">PORTFOLIO</a>
+            <button class="nav-toggle" id="navToggle" aria-label="เปิดเมนู" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="index.html#about">เกี่ยวกับฉัน</a></li>
+                <li><a href="index.html#assignments">งานในห้องเรียน</a></li>
+                <li><a href="index.html#contact">ติดต่อ</a></li>
+                <li><a href="project.html" class="active">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <h1>Projects</h1>
+        <p>โปรเจคที่เคยทำในรายวิชา</p>
+    </section>
+
+    <main class="container">
+
+        <div class="project-list" id="projectList">
+
+            <article class="project-card reveal">
+                <div class="project-head">
+                    <h2>เกม 2D (Unity)</h2>
+                </div>
+                <p>เกมแอ็กชัน 2D ที่ทำด้วย Unity เป็นโปรเจ็คงานของรายวิชา MDT211</p>
+                <a href="games/2dgame/index.html" target="_blank" rel="noopener" class="btn btn-primary btn-small">เล่นเกม</a>
+            </article>
+
+            <article class="project-card reveal">
+                <div class="project-head">
+                    <h2>Square Game</h2>
+                </div>
+                <p>เกมที่ให้ผู้เล่นเลือกจำนวนและสีของสี่เหลี่ยม แล้วกดลบสี่เหลี่ยมให้หมดภายใน 30 วินาที
+                   ฝึกการใช้ DOM Manipulation, Timer และ Event</p>
+                <a href="assignments/square-game/index.html" class="btn btn-primary btn-small">เปิดดูงาน</a>
+            </article>
+
+            <article class="project-card reveal">
+                <div class="project-head">
+                    <h2>Register and Login</h2>
+                </div>
+                <p>หน้าฟอร์มสมัครสมาชิกและเข้าสู่ระบบ พร้อมตรวจสอบข้อมูลที่กรอกด้วย JavaScript</p>
+                <a href="assignments/register-login/register.html" class="btn btn-primary btn-small">เปิดดูงาน</a>
+            </article>
+
+            <article class="project-card reveal">
+                <div class="project-head">
+                    <h2>Blog</h2>
+                </div>
+                <p>หน้าเว็บบล็อกที่จัด layout ด้วย CSS และรองรับการแสดงผลบนมือถือ</p>
+                <a href="assignments/blog/index.html" class="btn btn-primary btn-small">เปิดดูงาน</a>
+            </article>
+
+            <article class="project-card reveal">
+                <div class="project-head">
+                    <h2>เว็บสูตรอาหาร</h2>
+                </div>
+                <p>หน้าเว็บสูตรอาหาร Cinnamon Roll Wreath with Apples และ Pizza Dip ฝึกโครงสร้าง HTML และการตกแต่งด้วย CSS</p>
+                <div class="btn-row">
+                    <a href="assignments/cinnamon-roll/recipe.html" class="btn btn-primary btn-small">Cinnamon Roll</a>
+                    <a href="assignments/pizza-dip/recipe.html" class="btn btn-primary btn-small">Pizza Dip</a>
+                </div>
+            </article>
+
+            <article class="project-card reveal">
+                <div class="project-head">
+                    <h2>งานวิจัย: ปัจจัยที่ส่งผลต่อความสำเร็จในการพัฒนาเกม</h2>
+                </div>
+                <p>งานวิจัยกลุ่มในรายวิชา MDT212 Research For Media ศึกษาปัจจัยที่ส่งผลต่อความสำเร็จในการพัฒนาเกม
+                   ของนักศึกษาเทคโนโลยีมีเดีย เอกการพัฒนาเกม มจธ. ชั้นปีที่ 2-4 จำนวน 60 คน
+                   เก็บข้อมูลด้วยแบบสอบถามออนไลน์ และวิเคราะห์ด้วย PSPP (ค่าเฉลี่ย, One-Way ANOVA, Scheffé, t-test)</p>
+                <p>ผลการวิจัยพบว่าปัจจัยโดยรวมอยู่ในระดับมาก (ค่าเฉลี่ย 4.04) ด้านที่สูงที่สุดคือความสนใจในการพัฒนาเกม
+                   และนักศึกษาต่างชั้นปีมีความเห็นต่างกันในบางด้าน โดยเฉพาะทักษะการใช้ Unity</p>
+                <a href="docs/research-game-dev-factors.pdf" target="_blank" rel="noopener" class="btn btn-primary btn-small">อ่านงานวิจัย (PDF)</a>
+            </article>
+
+        </div>
+
+        <p class="back-link"><a href="index.html" class="btn btn-outline">← กลับหน้า Portfolio</a></p>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> เทียนชัย บุญสอน</p>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="กลับขึ้นด้านบน">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

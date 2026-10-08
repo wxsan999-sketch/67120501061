@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Register</title>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="register.js"></script>
+	</head>
+	<body>
+		<nav class="top-nav">
+			<a href="../../index.html">&larr; Back to Portfolio</a>
+		</nav>
+
+		<form name="myRegister" id="myRegister" action="login.html">
+			<fieldset>
+				<legend>Register</legend>
+				<p class="note">* require</p>
+				<p id="errormsg" class="error-msg"></p>
+
+				<div class="row">
+					<div class="field">
+						<label for="firstname">First name*</label>
+						<input type="text" name="firstname" id="firstname" required>
+					</div>
+					<div class="field">
+						<label for="lastname">Last name*</label>
+						<input type="text" name="lastname" id="lastname" required>
+					</div>
+				</div>
+
+				<div class="field">
+					<span class="label">Gender*</span>
+					<div class="radio-group">
+						<label><input type="radio" name="gender" value="male" required> Male</label>
+						<label><input type="radio" name="gender" value="female" required> Female</label>
+						<label><input type="radio" name="gender" value="other" required> Other</label>
+					</div>
+				</div>
+
+				<div class="field">
+					<label for="bday">Birthday*</label>
+					<input type="date" name="bday" id="bday" value="" required>
+				</div>
+
+				<div class="field">
+					<label for="email">Email address*</label>
+					<input type="email" name="email" id="email" required>
+				</div>
+
+				<div class="field">
+					<label for="regUsername">Username*</label>
+					<input type="text" name="username" id="regUsername" required>
+				</div>
+
+				<div class="row">
+					<div class="field">
+						<label for="password1">Password*</label>
+						<input type="password" name="password" id="password1" required>
+					</div>
+					<div class="field">
+						<label for="password2">Retype Password*</label>
+						<input type="password" name="password" id="password2" required>
+					</div>
+				</div>
+
+				<div class="button-group">
+					<input type="submit" value="Register" id="registerBtn">
+					<input type="reset" value="Reset" id="resetBtn">
+				</div>
+
+				<p class="switch-link">Already have an account? <a href="login.html">Login</a></p>
+			</fieldset>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,311 @@
+/* ---------- base / reset ---------- */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+	background-color: #fff8f0;
+	color: #3b2c26;
+	line-height: 1.5;
+}
+
+h1, h2, h3 {
+	font-family: Georgia, 'Times New Roman', serif;
+	margin-top: 0;
+}
+
+a {
+	color: #c0392b;
+}
+
+.content-img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	margin-top: 15px;
+	display: block;
+}
+
+/* ---------- grid layout ---------- */
+.grid-container {
+	display: grid;
+	width: 94%;
+	max-width: 1100px;
+	margin: 0 auto;
+	grid-template-columns: 66% 31%;
+	grid-template-areas:
+		"header header"
+		"main1  right"
+		"main2  right"
+		"footer footer";
+	gap: 3%;
+	padding: 3% 0;
+}
+
+.grid-container > div,
+.grid-container > header,
+.grid-container > section,
+.grid-container > aside,
+.grid-container > footer {
+	background-color: #ffffff;
+	padding: 5%;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- grid areas ---------- */
+#header {
+	grid-area: header;
+	background: linear-gradient(rgba(60, 20, 10, 0.55), rgba(60, 20, 10, 0.55)),
+		url('pic/pizza-dip-9.jpeg');
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	text-align: center;
+	padding: 6% 5%;
+}
+
+#header h1 {
+	font-size: 2.6em;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+}
+
+#header .tagline {
+	font-size: 1.1em;
+	margin: 0;
+}
+
+#main1 {
+	grid-area: main1;
+	background-color: #fffdf9;
+	border-left: 6px solid #f4a825;
+}
+
+#main2 {
+	grid-area: main2;
+	background-color: #fffdf9;
+	border-left: 6px solid #c0392b;
+}
+
+#main1 h3 {
+	color: #c0392b;
+	margin-top: 20px;
+}
+
+#main1 ul {
+	padding-left: 22px;
+}
+
+#main1 li {
+	margin-bottom: 8px;
+}
+
+/* numbered instruction steps */
+#main2 ol.steps {
+	list-style: none;
+	padding-left: 0;
+	counter-reset: step;
+}
+
+#main2 ol.steps li {
+	position: relative;
+	counter-increment: step;
+	padding-left: 48px;
+	margin-bottom: 25px;
+}
+
+#main2 ol.steps li::before {
+	content: counter(step);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: #c0392b;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+#main2 ol.steps p {
+	margin: 4px 0 0 0;
+}
+
+/* mini image row for a multi-part step */
+.step-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3%;
+	margin-top: 12px;
+}
+
+.step-grid img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	display: block;
+}
+
+.final-shot {
+	margin: 30px 0 0 0;
+	text-align: center;
+}
+
+.final-shot figcaption {
+	margin-top: 8px;
+	font-family: Georgia, 'Times New Roman', serif;
+	font-style: italic;
+	color: #c0392b;
+}
+
+#right {
+	grid-area: right;
+	background-color: #3b2c26;
+	color: #f5efe9;
+}
+
+.info-card h2 {
+	color: #f4a825;
+}
+
+.info-card ul {
+	padding-left: 20px;
+}
+
+.info-card li {
+	margin-bottom: 10px;
+}
+
+.source-link {
+	display: block;
+	text-align: center;
+	margin-top: 15px;
+	padding: 10px 5%;
+	background-color: #c0392b;
+	color: #ffffff !important;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.source-link:hover {
+	background-color: #a83224;
+}
+
+
+/* ---------- back to portfolio link ---------- */
+.top-nav {
+	background-color: #3b2c26;
+	padding: 10px 3%;
+}
+
+.top-nav a {
+	color: #f4a825;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.top-nav a:hover {
+	text-decoration: underline;
+}
+
+/* ---------- ingredient checklist (script.js) ---------- */
+.hint {
+	color: #8a6f62;
+	font-size: 0.9em;
+	margin: 0 0 10px 0;
+}
+
+#main1 li {
+	cursor: pointer;
+	transition: color 0.2s;
+}
+
+#main1 li:hover {
+	color: #c0392b;
+}
+
+#main1 li.checked {
+	color: #a8988f;
+	text-decoration: line-through;
+}
+
+/* ---------- responsive: tablet ---------- */
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		width: 92%;
+		grid-template-columns: 100%;
+		grid-template-areas:
+			"header"
+			"main1"
+			"main2"
+			"right"
+			"footer";
+		gap: 4%;
+		padding: 5% 0;
+	}
+
+	#header h1 {
+		font-size: 2.1em;
+	}
+
+	#header {
+		padding: 10% 6%;
+	}
+
+	.grid-container > div,
+	.grid-container > header,
+	.grid-container > section,
+	.grid-container > aside,
+	.grid-container > footer {
+		padding: 6%;
+	}
+}
+
+/* ---------- responsive: mobile ---------- */
+@media only screen and (max-width: 480px) {
+	.grid-container {
+		width: 100%;
+		gap: 3%;
+		padding: 0 0 6% 0;
+	}
+
+	.grid-container > div,
+	.grid-container > header,
+	.grid-container > section,
+	.grid-container > aside,
+	.grid-container > footer {
+		border-radius: 0;
+		padding: 7%;
+	}
+
+	#header h1 {
+		font-size: 1.6em;
+	}
+
+	#header .tagline {
+		font-size: 0.95em;
+	}
+
+	#main1,
+	#main2 {
+		border-left-width: 4px;
+	}
+
+	.source-link {
+		padding: 12px 5%;
+	}
+
+	.step-grid {
+		grid-template-columns: 1fr;
+		gap: 3%;
+	}
+}

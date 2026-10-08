@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - นายเทียนชัย บุญสอน</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- แถบเมนูด้านบน -->
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">PORTFOLIO</a>
+            <button class="nav-toggle" id="navToggle" aria-label="เปิดเมนู" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">หน้าแรก</a></li>
+                <li><a href="#about">เกี่ยวกับฉัน</a></li>
+                <li><a href="#assignments">งานในห้องเรียน</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+                <li><a href="project.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ส่วนแนะนำตัว -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="avatar" id="avatar">
+                <img src="images/profile.jpg" alt="รูปโปรไฟล์ เทียนชัย บุญสอน" id="avatarImg">
+                <span class="avatar-initials"></span>
+            </div>
+            <div class="hero-text">
+                <p class="hero-greeting"></p>
+                <h1>นายเทียนชัย บุญสอน</h1>
+                <p class="hero-sub">Technology Media</p>
+                <div class="hero-buttons">
+                    <a href="project.html" class="btn btn-primary">ดู Projects</a>
+                    <a href="#contact" class="btn btn-outline">ติดต่อฉัน</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <!-- เกี่ยวกับฉัน -->
+        <section id="about" class="section reveal">
+            <h2 class="section-title">เกี่ยวกับฉัน</h2>
+
+            <div class="card-grid">
+                <article class="card">
+                    <h3>🎮 งานอดิเรก</h3>
+                    <ul>
+                        <li>เล่นเกม (FPS, Battle Royale, RPG)</li>
+                        <li>ดูคลิปเกมและการแข่งขัน E-sports</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>🛠️ ทักษะและความสามารถ</h3>
+                    <ul>
+                        <li>แก้ปัญหาเฉพาะหน้า</li>
+                        <li>ทำงานเป็นทีม</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>💡 ความสนใจ</h3>
+                    <ul>
+                        <li>การพัฒนาเว็บไซต์</li>
+                        <li>การออกแบบและพัฒนาเกม</li>
+                    </ul>
+                </article>
+            </div>
+
+            <h3 class="sub-title">เกมที่ชอบเล่น</h3>
+            <div class="game-gallery">
+                <figure class="game-item">
+                    <img src="images/pubg.png" alt="PUBG">
+                    <figcaption>PUBG</figcaption>
+                </figure>
+                <figure class="game-item">
+                    <img src="images/valorant.png" alt="Valorant">
+                    <figcaption>Valorant</figcaption>
+                </figure>
+                <figure class="game-item">
+                    <img src="images/path-of-exile.jpg" alt="Path of Exile 2">
+                    <figcaption>Path of Exile 2</figcaption>
+                </figure>
+                <figure class="game-item">
+                    <img src="images/overwatch.png" alt="Overwatch">
+                    <figcaption>Overwatch</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ลิงก์ไปงานในห้องเรียน -->
+        <section id="assignments" class="section reveal">
+            <h2 class="section-title">งานในห้องเรียน</h2>
+            <p class="section-desc">Assignment ที่ทำในรายวิชา (แต่ละหน้าใช้ CSS และ JavaScript แบบ external)</p>
+
+            <div class="assignment-grid">
+                <a href="assignments/cinnamon-roll/recipe.html" class="assignment-card">
+                    <span class="assignment-icon">🍎</span>
+                    <h3>Cinnamon Roll Wreath with Apples</h3>
+                    <p>หน้าเว็บสูตรอาหาร</p>
+                </a>
+                <a href="assignments/pizza-dip/recipe.html" class="assignment-card">
+                    <span class="assignment-icon">🍕</span>
+                    <h3>Pizza Dip</h3>
+                    <p>หน้าเว็บสูตรอาหาร</p>
+                </a>
+                <a href="assignments/blog/index.html" class="assignment-card">
+                    <span class="assignment-icon">📝</span>
+                    <h3>Blog</h3>
+                    <p>หน้าเว็บบล็อก</p>
+                </a>
+                <a href="assignments/register-login/register.html" class="assignment-card">
+                    <span class="assignment-icon">🔐</span>
+                    <h3>Register and Login</h3>
+                    <p>ฟอร์มสมัครสมาชิกและเข้าสู่ระบบ</p>
+                </a>
+                <a href="assignments/square-game/index.html" class="assignment-card">
+                    <span class="assignment-icon">🟥</span>
+                    <h3>Square Game</h3>
+                    <p>เกมกดลบสี่เหลี่ยมให้หมดใน 30 วินาที</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- ข้อมูลติดต่อ -->
+        <section id="contact" class="section reveal">
+            <h2 class="section-title">ข้อมูลติดต่อ</h2>
+            <div class="social-links">
+                <a href="https://www.facebook.com/lekky.wx.2025/" target="_blank" rel="noopener" class="social-link">
+                    <img src="images/facebook.jpg" alt="Facebook">
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/lekkywx/" target="_blank" rel="noopener" class="social-link">
+                    <img src="images/instagram.webp" alt="Instagram">
+                    <span>Instagram</span>
+                </a>
+                <a href="https://discordapp.com/users/711280812351422485" target="_blank" rel="noopener" class="social-link">
+                    <img src="images/discord.png" alt="Discord">
+                    <span>Discord</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> เทียนชัย บุญสอน</p>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="กลับขึ้นด้านบน">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
